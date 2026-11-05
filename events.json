@@ -1,0 +1,1982 @@
+{
+ "schema": 1,
+ "checked": "2026-11-05",
+ "lastMonth": "2027-12",
+ "normalMove": 0.8,
+ "allFell2": 4.2,
+ "noDate": "41 of the 50 worst days since 1999 were not on a scheduled event day, so an empty week isn't a safe week.",
+ "further": "Further out: the presidential election on Tue Nov 7, 2028. The day after has averaged a 2.31% move, 4 up and 3 down.",
+ "whatIf": {
+  "rows": [
+   [
+    "Held the whole time",
+    6.26
+   ],
+   [
+    "Out on Fed days",
+    3.82
+   ],
+   [
+    "Out on CPI days",
+    6.22
+   ],
+   [
+    "Out on jobs days",
+    4.93
+   ],
+   [
+    "Out on all three",
+    3.47
+   ]
+  ],
+  "held": 6.26,
+  "note": "$1 from 1999 to Nov 4, 2026. Price only, before taxes and costs, cash earning nothing.",
+  "early": "One version did better: out the session after each event reached $9.88. It was found after looking at the data, beat holding in only 11 of 28 years, and falls to $5.36 without the 10 worst days it happened to dodge. Treat it as an unproven early pattern."
+ },
+ "types": {
+  "jobs": {
+   "name": "Jobs report",
+   "short": "Jobs",
+   "tier": 1,
+   "card": true,
+   "remind": true,
+   "source": "the Bureau of Labor Statistics",
+   "what": "Monthly count of jobs added and the unemployment rate.",
+   "stats": {
+    "avg": 0.91,
+    "n": 333,
+    "fell2": 5.7,
+    "moved2": 9.9,
+    "label": "Averages 0.91%"
+   },
+   "history": [
+    "Direction isn't set. A weak report brought -1.84% on Aug 2, 2024. A strong one brought about -2.6% on Jun 5, 2026."
+   ],
+   "stepOut": 4.93
+  },
+  "cpi": {
+   "name": "CPI inflation report",
+   "short": "CPI",
+   "tier": 1,
+   "card": true,
+   "remind": true,
+   "source": "the Bureau of Labor Statistics",
+   "what": "Monthly change in consumer prices, the main inflation number.",
+   "stats": {
+    "avg": 0.85,
+    "n": 333,
+    "fell2": 4.8,
+    "moved2": 9.0,
+    "label": "Averages 0.85%"
+   },
+   "history": [
+    "What matters depends on what the market fears. CPI days averaged 1.93% in 2022, with -4.32% on Sep 13 and +5.54% on Nov 10, but only 0.38% in 2019 and 0.48% so far in 2026."
+   ],
+   "stepOut": 6.22
+  },
+  "fed": {
+   "name": "Fed decision",
+   "short": "Fed",
+   "tier": 1,
+   "card": true,
+   "remind": true,
+   "source": "the Federal Reserve",
+   "what": "The Fed committee's decision on interest rates. The Fed treats each date as tentative until the meeting before it confirms it.",
+   "stats": {
+    "avg": 0.88,
+    "n": 222,
+    "fell2": 3.2,
+    "moved2": 9.9,
+    "label": "Averages 0.88%"
+   },
+   "history": [
+    "The statement comes at 2 PM, so decision day holds only about two hours of reaction. The next session has been bigger: 0.99% on average, with falls of 2% or more on 8.1% of them. That is an early pattern, not a proven one.",
+    "Fed days also averaged a +0.23% gain against +0.03% on other days, mostly before 2010, which is why stepping out on them did so poorly."
+   ],
+   "stepOut": 3.82
+  },
+  "presidential": {
+   "name": "Presidential election",
+   "short": "Election",
+   "tier": 1,
+   "card": true,
+   "source": "federal law",
+   "what": "The clearest size event on the calendar, with no usable direction.",
+   "stats": {
+    "avg": 2.31,
+    "n": 7,
+    "fell2": 28.6,
+    "moved2": 57.1,
+    "when": "next session",
+    "label": "Next day avg 2.31%"
+   },
+   "history": [
+    "Since 2000, four next sessions rose and three fell, from -5.27% in 2008 to +2.53% in 2024."
+   ]
+  },
+  "midterm": {
+   "name": "Midterm election",
+   "short": "Midterm",
+   "tier": 1,
+   "card": true,
+   "source": "federal law",
+   "what": "Control of Congress and many governors' races.",
+   "stats": {
+    "avg": 1.04,
+    "n": 6,
+    "fell2": 16.7,
+    "moved2": 33.3,
+    "when": "next session",
+    "label": "Next day avg 1.04%"
+   },
+   "history": [
+    "Five of the six next sessions since 2002 rose.",
+    "This year the S&P rose 0.36% on Nov 3 and 1.58% on Nov 4, then fell 4.36% on Nov 5, its worst day since April 2025. Reporters mostly blamed election fears about AI data centers, along with chip earnings and an already weak AI trade. That link is unproven."
+   ]
+  },
+  "nvidia": {
+   "name": "Nvidia results",
+   "short": "Nvidia",
+   "tier": 2,
+   "card": true,
+   "source": "Nvidia",
+   "what": "Results from the largest chip maker, about 8% of the S&P 500 in February 2026.",
+   "stats": {
+    "avg": 0.72,
+    "n": 40,
+    "fell2": 5.0,
+    "moved2": 7.5,
+    "when": "next session",
+    "label": "Next day avg 0.72%"
+   },
+   "history": [
+    "That's below the 0.81% on other days since 2016. Since 2023 it's 0.79% against 0.65%, on 15 reports."
+   ]
+  },
+  "bigtech": {
+   "name": "Big tech results",
+   "short": "Big tech",
+   "tier": 2,
+   "card": true,
+   "source": "last year's report dates",
+   "what": "The 10 largest companies were about 40% of the S&P 500 at the end of 2025. These companies usually announce their dates a few weeks ahead.",
+   "history": [
+    "Direction can't be known ahead. Microsoft fell 9.99% on Jan 29, 2026 after beating estimates. Meta fell 26% on Feb 3, 2022 and the index fell 2.4%."
+   ]
+  },
+  "banks": {
+   "name": "JPMorgan results",
+   "short": "JPMorgan",
+   "tier": 2,
+   "card": true,
+   "source": "JPMorgan",
+   "what": "JPMorgan opens each bank earnings season. It has moved a date before.",
+   "history": [
+    "No study of bank earnings and the index was found."
+   ]
+  },
+  "funding": {
+   "name": "Government funding ends",
+   "short": "Funding deadline",
+   "tier": 2,
+   "card": true,
+   "source": "news reports of the funding law",
+   "what": "Federal funding runs out unless Congress acts. A lapse can also move government data dates.",
+   "stats": {
+    "label": "Shutdowns avg +0.1%"
+   },
+   "history": [
+    "21 past shutdowns averaged +0.1% and 12 of them rose.",
+    "The 2025 lapse canceled the October 2025 jobs report. If one starts after Dec 11, 2026, the Dec 15 PPI and January's jobs, CPI and PPI dates are the most exposed."
+   ]
+  },
+  "debt": {
+   "name": "Debt limit",
+   "short": "Debt limit",
+   "tier": 2,
+   "card": true,
+   "source": "the Bipartisan Policy Center",
+   "what": "The $41.1 trillion cap on federal borrowing. Reaching it starts a countdown to the X-date, when the Treasury would run out of cash and borrowing room. No official date exists.",
+   "history": [
+    "The same kind of deadline brought -6.66% on Aug 8, 2011, the first session after the US credit downgrade, and almost nothing around the June 2023 X-date."
+   ]
+  },
+  "trade": {
+   "name": "US-China trade deadline",
+   "short": "US-China",
+   "tier": 2,
+   "card": true,
+   "source": "trade press and government statements",
+   "what": "Dates when the US-China trade truce or its legal texts are set to run out.",
+   "history": [
+    "Tariff news has moved the market both ways, often with no date ahead: -4.84% and -5.97% on Apr 3-4, 2025, then +9.52% on the Apr 9 pause. The Supreme Court ruling against tariffs on Feb 20, 2026 brought just +0.7%."
+   ]
+  },
+  "tariff": {
+   "name": "Tariff date",
+   "short": "Tariffs",
+   "tier": 2,
+   "source": "the Congressional Research Service",
+   "what": "A tariff or import rule set to start or change on this date.",
+   "history": [
+    "Tariff news has moved the market both ways, often with no date ahead."
+   ]
+  },
+  "retail": {
+   "name": "Retail sales",
+   "short": "Retail sales",
+   "tier": 2,
+   "source": "the Census Bureau",
+   "what": "Monthly spending at stores and online.",
+   "history": [
+    "No long-run number was found. One data vendor (ORATS) has 1.08% against 0.67% on other days from 2022 to 2026, on just 15 sessions."
+   ]
+  },
+  "ism_mfg": {
+   "name": "ISM manufacturing survey",
+   "short": "ISM",
+   "tier": 2,
+   "source": "ISM's first business day rule",
+   "what": "Monthly survey of factory purchasing managers.",
+   "history": [
+    "ISM surveys averaged 0.96% against 0.67% on other days from 2022 to 2026 in one data vendor's sample (ORATS)."
+   ]
+  },
+  "ism_services": {
+   "name": "ISM services survey",
+   "short": "ISM",
+   "tier": 2,
+   "source": "ISM's third business day rule",
+   "what": "Monthly survey of purchasing managers at service companies.",
+   "history": [
+    "ISM surveys averaged 0.96% against 0.67% on other days from 2022 to 2026 in one data vendor's sample (ORATS)."
+   ]
+  },
+  "jackson": {
+   "name": "Fed's Jackson Hole conference",
+   "short": "Jackson Hole",
+   "tier": 2,
+   "source": "the 2024 to 2026 dates",
+   "what": "Yearly Fed conference. It matters when the chair resets policy.",
+   "history": [
+    "The 2022 speech brought -3.4%."
+   ]
+  },
+  "ppi": {
+   "name": "PPI producer prices",
+   "short": "PPI",
+   "tier": 3,
+   "source": "the Bureau of Labor Statistics",
+   "what": "Monthly change in the prices businesses charge each other.",
+   "history": [
+    "No standalone S&P number was found."
+   ]
+  },
+  "pce": {
+   "name": "PCE inflation",
+   "short": "PCE",
+   "tier": 3,
+   "source": "the Bureau of Economic Analysis",
+   "what": "The government's other inflation measure, the one the Fed targets.",
+   "history": [
+    "Averaged 0.77% in one data vendor's 2022 to 2026 sample (ORATS), about in line with an ordinary day."
+   ]
+  },
+  "gdp": {
+   "name": "GDP",
+   "short": "GDP",
+   "tier": 3,
+   "source": "the Bureau of Economic Analysis",
+   "what": "How fast the US economy grew."
+  },
+  "jolts": {
+   "name": "JOLTS job openings",
+   "short": "JOLTS",
+   "tier": 3,
+   "source": "the Bureau of Labor Statistics",
+   "what": "Monthly count of open jobs. Only the next date is published.",
+   "history": [
+    "No standalone S&P number was found."
+   ]
+  },
+  "minutes": {
+   "name": "Fed minutes",
+   "short": "Fed minutes",
+   "tier": 3,
+   "source": "the Fed's three-week rule",
+   "what": "The written record of the last Fed meeting, released three weeks after the decision."
+  },
+  "auction": {
+   "name": "Treasury auction",
+   "short": "Auction",
+   "tier": 3,
+   "source": "the Treasury",
+   "what": "The government selling new debt.",
+   "history": [
+    "No formal study tying auctions to S&P returns was found."
+   ]
+  },
+  "refunding": {
+   "name": "Treasury refunding",
+   "short": "Refunding",
+   "tier": 3,
+   "source": "the Treasury",
+   "what": "How much long-term debt the Treasury plans to sell."
+  },
+  "ecb": {
+   "name": "European Central Bank decision",
+   "short": "ECB",
+   "tier": 3,
+   "source": "the European Central Bank",
+   "what": "Interest rate decision for the euro area."
+  },
+  "boj": {
+   "name": "Bank of Japan decision",
+   "short": "BoJ",
+   "tier": 3,
+   "source": "the Bank of Japan",
+   "what": "Interest rate decision for Japan. It comes out overnight US time, before this day's open.",
+   "history": [
+    "Japan's rate hike came days before the yen trade unwind of Aug 5, 2024 (-3.0%)."
+   ]
+  },
+  "opex": {
+   "name": "Monthly options expiry",
+   "short": "Options expiry",
+   "tier": 3,
+   "source": "the third Friday rule",
+   "what": "Monthly stock and index options expire at the close.",
+   "stats": {
+    "avg": 0.73,
+    "n": 334,
+    "fell2": 3.3,
+    "moved2": 5.7,
+    "label": "Averages 0.73%"
+   },
+   "history": [
+    "Quieter than normal, despite the scary reputation."
+   ]
+  },
+  "triple": {
+   "name": "Triple witching",
+   "short": "Triple witching",
+   "tier": 3,
+   "source": "the third Friday rule",
+   "what": "Stock options, index options and index futures all expire, and the S&P 500 does its quarterly rebalance.",
+   "stats": {
+    "avg": 0.72,
+    "n": 111,
+    "fell2": 2.7,
+    "moved2": 5.4,
+    "label": "Averages 0.72%"
+   },
+   "history": [
+    "Quieter than normal, despite the scary name. Since 2020 it has averaged -0.44%, on 27 days, but that didn't hold up to testing."
+   ]
+  },
+  "vix": {
+   "name": "VIX expiry",
+   "short": "VIX expiry",
+   "tier": 3,
+   "source": "Cboe",
+   "what": "Monthly VIX futures and options settle in the morning."
+  },
+  "runoff": {
+   "name": "Election runoff or count",
+   "short": "Runoff",
+   "tier": 3,
+   "source": "state election offices and a law firm's tracker",
+   "what": "A later step in the midterms. Neither chamber depends on it as far as reported."
+  },
+  "closed": {
+   "name": "Market closed",
+   "short": "Closed",
+   "tier": 0,
+   "source": "the NYSE",
+   "what": "US stock markets are closed."
+  },
+  "early": {
+   "name": "Early close",
+   "short": "Early close",
+   "tier": 0,
+   "source": "the NYSE",
+   "what": "US stock markets close at 1 PM ET."
+  },
+  "court": {
+   "name": "Supreme Court term ends",
+   "short": "Court term",
+   "tier": 3,
+   "source": "the Court's usual calendar",
+   "what": "Rulings have no advance date, so this is only a note. A climate liability case is pending."
+  }
+ },
+ "events": [
+  {
+   "date": "2026-11-03",
+   "type": "midterm",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2026-11-06",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "auction",
+   "firm": "confirmed",
+   "time": "13:00",
+   "detail": "3-year note. The Treasury calls its auction schedule tentative."
+  },
+  {
+   "date": "2026-11-09",
+   "type": "trade",
+   "firm": "reported",
+   "label": "End of day",
+   "detail": "Legal texts still end the US Affiliates Rule pause and 178 China tariff exclusions on Nov 9, and China's export control pause on Nov 10, unless extended. Both governments have announced a truce to Jan 10, 2027, but no formal notice had been seen as of Nov 5."
+  },
+  {
+   "date": "2026-11-10",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-11-10",
+   "type": "auction",
+   "firm": "confirmed",
+   "time": "13:00",
+   "detail": "10-year note. The Treasury calls its auction schedule tentative."
+  },
+  {
+   "date": "2026-11-12",
+   "type": "auction",
+   "firm": "confirmed",
+   "time": "13:00",
+   "detail": "30-year bond. The Treasury calls its auction schedule tentative."
+  },
+  {
+   "date": "2026-11-13",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "nvidia",
+   "firm": "confirmed",
+   "time": "16:20",
+   "label": "After close"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "minutes",
+   "firm": "confirmed",
+   "time": "14:00",
+   "source": "the Federal Reserve"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "runoff",
+   "firm": "reported",
+   "title": "Alaska ranked-choice count",
+   "detail": "Only if it's needed."
+  },
+  {
+   "date": "2026-11-18",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2026-11-20",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2026-11-25",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q3 2026 second estimate"
+  },
+  {
+   "date": "2026-11-25",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-11-26",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2026-11-27",
+   "type": "early",
+   "firm": "confirmed",
+   "time": "13:00",
+   "label": "1 PM ET close"
+  },
+  {
+   "date": "2026-11-27",
+   "type": "tariff",
+   "firm": "reported",
+   "title": "China's metals pause ends",
+   "source": "trade press",
+   "detail": "China's pause on its US-specific gallium, germanium and antimony ban runs to this date under current text."
+  },
+  {
+   "date": "2026-12-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2026-12-01",
+   "type": "jolts",
+   "firm": "confirmed",
+   "time": "10:00"
+  },
+  {
+   "date": "2026-12-01",
+   "type": "runoff",
+   "firm": "reported",
+   "title": "Georgia runoff date",
+   "detail": "The Senate and governor's races were reported settled."
+  },
+  {
+   "date": "2026-12-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2026-12-04",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-12-04",
+   "type": "tariff",
+   "firm": "confirmed",
+   "title": "Polysilicon minimum import prices start",
+   "detail": "As of Sep 30."
+  },
+  {
+   "date": "2026-12-09",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00",
+   "title": "Fed decision with projections"
+  },
+  {
+   "date": "2026-12-10",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-12-11",
+   "type": "funding",
+   "firm": "reported",
+   "label": "Deadline"
+  },
+  {
+   "date": "2026-12-12",
+   "type": "runoff",
+   "firm": "reported",
+   "title": "Louisiana 6th District runoff"
+  },
+  {
+   "date": "2026-12-15",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-12-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-12-16",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2026-12-17",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2026-12-18",
+   "type": "triple",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2026-12-18",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2026-12-23",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q3 2026 third estimate"
+  },
+  {
+   "date": "2026-12-23",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2026-12-24",
+   "type": "early",
+   "firm": "confirmed",
+   "time": "13:00",
+   "label": "1 PM ET close"
+  },
+  {
+   "date": "2026-12-25",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2026-12-30",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-01-01",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-01-01",
+   "type": "tariff",
+   "firm": "confirmed",
+   "title": "Lumber and timber tariff increase",
+   "detail": "As of Sep 30."
+  },
+  {
+   "date": "2027-01-04",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-01-06",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-01-08",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-01-10",
+   "type": "trade",
+   "firm": "reported",
+   "title": "US-China truce ends",
+   "label": "Sunday",
+   "detail": "Announced by both sides. The formal texts hadn't been seen as of Nov 5."
+  },
+  {
+   "date": "2027-01-13",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-01-14",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-01-14",
+   "type": "banks",
+   "firm": "confirmed",
+   "label": "Before open"
+  },
+  {
+   "date": "2027-01-15",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-01-15",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-01-18",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-01-20",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-01-22",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-01-27",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-01-28",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q4 2026 advance"
+  },
+  {
+   "date": "2027-01-28",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-02-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-02-01",
+   "type": "refunding",
+   "firm": "confirmed",
+   "title": "Treasury financing estimates"
+  },
+  {
+   "date": "2027-02-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-02-03",
+   "type": "refunding",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-02-04",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-02-05",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-02-09",
+   "type": "tariff",
+   "firm": "confirmed",
+   "title": "Drone component tariffs",
+   "detail": "As of Sep 30."
+  },
+  {
+   "date": "2027-02-11",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-02-12",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-02-15",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-02-17",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-02-17",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-02-17",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-02-19",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-02-25",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q4 2026 second estimate"
+  },
+  {
+   "date": "2027-02-25",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-03-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-03-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-03-05",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-03-10",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-03-12",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-03-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-03-17",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00",
+   "title": "Fed decision with projections"
+  },
+  {
+   "date": "2027-03-17",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-03-18",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-03-18",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-03-19",
+   "type": "triple",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-03-26",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-03-31",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q4 2026 third estimate"
+  },
+  {
+   "date": "2027-03-31",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-04-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-04-02",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-04-05",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-04-07",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-04-13",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-04-13",
+   "type": "banks",
+   "firm": "confirmed",
+   "label": "Before open"
+  },
+  {
+   "date": "2027-04-14",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-04-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-04-16",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-04-21",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-04-28",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-04-28",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-04-29",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q1 2027 advance"
+  },
+  {
+   "date": "2027-04-29",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-04-29",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-05-03",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-05-05",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-05-07",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-05-12",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-05-13",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-05-14",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-05-18",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-05-19",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-05-21",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-05-27",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q1 2027 second estimate"
+  },
+  {
+   "date": "2027-05-27",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-05-31",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-06-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-06-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-06-04",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-06-09",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00",
+   "title": "Fed decision with projections"
+  },
+  {
+   "date": "2027-06-10",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-06-10",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-06-11",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-06-11",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-06-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-06-16",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-06-17",
+   "type": "triple",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-06-18",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-06-25",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q1 2027 third estimate"
+  },
+  {
+   "date": "2027-06-25",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-06-30",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-07-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-07-02",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-07-05",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-07-06",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-07-13",
+   "type": "banks",
+   "firm": "confirmed",
+   "label": "Before open"
+  },
+  {
+   "date": "2027-07-14",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-07-15",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-07-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-07-16",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-07-21",
+   "type": "vix",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-07-22",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-07-22",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-07-28",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-07-29",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q2 2027 advance"
+  },
+  {
+   "date": "2027-07-29",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-08-02",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-08-04",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-08-06",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-08-10",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-08-11",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-08-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-08-18",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-08-18",
+   "type": "vix",
+   "firm": "calculated",
+   "source": "the rule behind Cboe's dates"
+  },
+  {
+   "date": "2027-08-20",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-08-25",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q2 2027 second estimate"
+  },
+  {
+   "date": "2027-08-25",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-09-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-09-03",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-09-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-09-06",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-09-09",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-09-10",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-09-14",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-09-15",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00",
+   "title": "Fed decision with projections"
+  },
+  {
+   "date": "2027-09-15",
+   "type": "vix",
+   "firm": "calculated",
+   "source": "the rule behind Cboe's dates"
+  },
+  {
+   "date": "2027-09-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-09-17",
+   "type": "triple",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-09-22",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-09-30",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q2 2027 third estimate"
+  },
+  {
+   "date": "2027-09-30",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-10-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-10-05",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-10-06",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-10-08",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-10-12",
+   "type": "banks",
+   "firm": "confirmed",
+   "label": "Before open"
+  },
+  {
+   "date": "2027-10-14",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-10-15",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-10-15",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-10-15",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-10-20",
+   "type": "vix",
+   "firm": "calculated",
+   "source": "the rule behind Cboe's dates"
+  },
+  {
+   "date": "2027-10-27",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-10-28",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q3 2027 advance"
+  },
+  {
+   "date": "2027-10-28",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-10-28",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-10-29",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-11-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-11-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-11-05",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-11-10",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-11-12",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-11-16",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-11-17",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2027-11-17",
+   "type": "vix",
+   "firm": "calculated",
+   "source": "the rule behind Cboe's dates"
+  },
+  {
+   "date": "2027-11-19",
+   "type": "opex",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-11-24",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q3 2027 second estimate"
+  },
+  {
+   "date": "2027-11-24",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-11-25",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-11-26",
+   "type": "early",
+   "firm": "confirmed",
+   "time": "13:00",
+   "label": "1 PM ET close"
+  },
+  {
+   "date": "2027-12-01",
+   "type": "ism_mfg",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-12-03",
+   "type": "jobs",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-12-03",
+   "type": "ism_services",
+   "firm": "calculated",
+   "time": "10:00"
+  },
+  {
+   "date": "2027-12-08",
+   "type": "fed",
+   "firm": "confirmed",
+   "time": "14:00",
+   "title": "Fed decision with projections"
+  },
+  {
+   "date": "2027-12-10",
+   "type": "cpi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-12-15",
+   "type": "ppi",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-12-15",
+   "type": "retail",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-12-16",
+   "type": "ecb",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-12-17",
+   "type": "triple",
+   "firm": "calculated",
+   "label": "At the close",
+   "time": "16:00"
+  },
+  {
+   "date": "2027-12-17",
+   "type": "boj",
+   "firm": "confirmed",
+   "label": "Overnight"
+  },
+  {
+   "date": "2027-12-22",
+   "type": "gdp",
+   "firm": "confirmed",
+   "time": "08:30",
+   "detail": "Q3 2027 third estimate"
+  },
+  {
+   "date": "2027-12-22",
+   "type": "pce",
+   "firm": "confirmed",
+   "time": "08:30"
+  },
+  {
+   "date": "2027-12-22",
+   "type": "vix",
+   "firm": "calculated",
+   "source": "the rule behind Cboe's dates"
+  },
+  {
+   "date": "2027-12-24",
+   "type": "closed",
+   "firm": "confirmed"
+  },
+  {
+   "date": "2027-12-29",
+   "type": "minutes",
+   "firm": "calculated",
+   "time": "14:00"
+  },
+  {
+   "date": "2028-11-07",
+   "type": "presidential",
+   "firm": "calculated",
+   "label": "Votes all day"
+  }
+ ],
+ "windows": [
+  {
+   "type": "bigtech",
+   "title": "Apple, Microsoft, Meta, Tesla",
+   "text": "Late Jan 2027",
+   "from": "2027-01-25",
+   "to": "2027-01-31",
+   "firm": "estimated"
+  },
+  {
+   "type": "bigtech",
+   "title": "Alphabet, Amazon",
+   "text": "Early Feb 2027",
+   "from": "2027-02-01",
+   "to": "2027-02-10",
+   "firm": "estimated"
+  },
+  {
+   "type": "nvidia",
+   "title": "Nvidia results",
+   "text": "Late Feb 2027",
+   "from": "2027-02-20",
+   "to": "2027-02-28",
+   "firm": "estimated",
+   "source": "last year's report date"
+  },
+  {
+   "type": "debt",
+   "title": "Debt reaches the limit",
+   "text": "Late winter to mid-summer 2027",
+   "from": "2027-02-15",
+   "to": "2027-07-31",
+   "firm": "estimated"
+  },
+  {
+   "type": "refunding",
+   "title": "Treasury refunding",
+   "text": "About May 5, 2027",
+   "from": "2027-05-01",
+   "to": "2027-05-12",
+   "firm": "estimated",
+   "source": "the last two refundings. It could be a week off"
+  },
+  {
+   "type": "court",
+   "title": "Supreme Court term ends",
+   "text": "By end of June 2027",
+   "from": "2027-06-01",
+   "to": "2027-06-30",
+   "firm": "estimated"
+  },
+  {
+   "type": "refunding",
+   "title": "Treasury refunding",
+   "text": "About Aug 4, 2027",
+   "from": "2027-07-28",
+   "to": "2027-08-11",
+   "firm": "estimated",
+   "source": "the last two refundings. It could be a week off"
+  },
+  {
+   "type": "jackson",
+   "title": "Fed's Jackson Hole conference",
+   "text": "Late Aug 2027",
+   "from": "2027-08-20",
+   "to": "2027-08-31",
+   "firm": "estimated"
+  },
+  {
+   "type": "refunding",
+   "title": "Treasury refunding",
+   "text": "About Nov 3, 2027",
+   "from": "2027-10-27",
+   "to": "2027-11-10",
+   "firm": "estimated",
+   "source": "the last two refundings. It could be a week off"
+  },
+  {
+   "type": "debt",
+   "title": "Debt-ceiling X-date",
+   "text": "Roughly late 2027 to spring 2028",
+   "from": "2027-11-01",
+   "to": "2028-05-31",
+   "firm": "estimated",
+   "source": "the six to nine months of extra room the Bipartisan Policy Center expects"
+  }
+ ],
+ "crowded": [
+  {
+   "from": "2026-12-09",
+   "to": "2026-12-11",
+   "text": "the Fed, CPI and the funding deadline on three days in a row."
+  },
+  {
+   "from": "2027-03-17",
+   "to": "2027-03-18",
+   "text": "the Fed and VIX expiry, then the European and Japanese central banks the next day."
+  },
+  {
+   "from": "2027-06-09",
+   "to": "2027-06-10",
+   "text": "the Fed and CPI on back-to-back days."
+  },
+  {
+   "from": "2027-09-14",
+   "to": "2027-09-15",
+   "text": "CPI and the Fed on back-to-back days."
+  },
+  {
+   "from": "2027-10-15",
+   "to": "2027-10-15",
+   "text": "PPI, retail sales and options expiry on one day."
+  },
+  {
+   "from": "2027-10-28",
+   "to": "2027-10-29",
+   "text": "GDP, PCE and the European Central Bank, then the Bank of Japan the next morning."
+  }
+ ],
+ "marks": [
+  {
+   "date": "2000-11-07",
+   "moveDate": "2000-11-08",
+   "text": "2000 presidential election",
+   "move": -1.58
+  },
+  {
+   "date": "2002-11-05",
+   "moveDate": "2002-11-06",
+   "text": "2002 midterm election",
+   "move": 0.91
+  },
+  {
+   "date": "2004-11-02",
+   "moveDate": "2004-11-03",
+   "text": "2004 presidential election",
+   "move": 1.12
+  },
+  {
+   "date": "2006-11-07",
+   "moveDate": "2006-11-08",
+   "text": "2006 midterm election",
+   "move": 0.21
+  },
+  {
+   "date": "2008-09-29",
+   "text": "House rejects the bank rescue",
+   "move": -8.81
+  },
+  {
+   "date": "2008-11-04",
+   "moveDate": "2008-11-05",
+   "text": "2008 presidential election",
+   "move": -5.27
+  },
+  {
+   "date": "2010-11-02",
+   "moveDate": "2010-11-03",
+   "text": "2010 midterm election",
+   "move": 0.37
+  },
+  {
+   "date": "2011-08-08",
+   "text": "First session after the US credit downgrade",
+   "move": -6.66
+  },
+  {
+   "date": "2012-11-06",
+   "moveDate": "2012-11-07",
+   "text": "2012 presidential election",
+   "move": -2.37
+  },
+  {
+   "date": "2014-11-04",
+   "moveDate": "2014-11-05",
+   "text": "2014 midterm election",
+   "move": 0.57
+  },
+  {
+   "date": "2016-11-08",
+   "moveDate": "2016-11-09",
+   "text": "2016 presidential election",
+   "move": 1.11
+  },
+  {
+   "date": "2018-11-06",
+   "moveDate": "2018-11-07",
+   "text": "2018 midterm election",
+   "move": 2.12
+  },
+  {
+   "date": "2020-03-16",
+   "text": "COVID panic",
+   "move": -11.98
+  },
+  {
+   "date": "2020-11-03",
+   "moveDate": "2020-11-04",
+   "text": "2020 presidential election",
+   "move": 2.2
+  },
+  {
+   "date": "2022-02-03",
+   "text": "Meta results, shares down 26%",
+   "move": -2.44
+  },
+  {
+   "date": "2022-09-13",
+   "text": "CPI report",
+   "move": -4.32
+  },
+  {
+   "date": "2022-11-08",
+   "moveDate": "2022-11-09",
+   "text": "2022 midterm election",
+   "move": -2.08
+  },
+  {
+   "date": "2022-11-10",
+   "text": "CPI report",
+   "move": 5.54
+  },
+  {
+   "date": "2024-08-05",
+   "text": "Yen trade unwind",
+   "move": -3.0
+  },
+  {
+   "date": "2024-11-05",
+   "moveDate": "2024-11-06",
+   "text": "2024 presidential election",
+   "move": 2.53
+  },
+  {
+   "date": "2025-01-27",
+   "text": "DeepSeek, Nvidia down 17%",
+   "move": -1.46
+  },
+  {
+   "date": "2025-04-03",
+   "text": "Tariff announcement",
+   "move": -4.84
+  },
+  {
+   "date": "2025-04-04",
+   "text": "Tariff selling continues",
+   "move": -5.97
+  },
+  {
+   "date": "2025-04-09",
+   "text": "Tariff pause",
+   "move": 9.52
+  },
+  {
+   "date": "2026-02-20",
+   "text": "Supreme Court strikes down tariffs",
+   "move": 0.69
+  },
+  {
+   "date": "2026-11-03",
+   "moveDate": "2026-11-04",
+   "text": "2026 midterm election",
+   "move": 1.58
+  },
+  {
+   "date": "2026-11-05",
+   "text": "AI stock sell-off after the midterms",
+   "move": -4.36
+  }
+ ]
+}
