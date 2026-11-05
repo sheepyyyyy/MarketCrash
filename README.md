@@ -18,7 +18,9 @@ You need a Mac with Apple Silicon (M1 or newer) running macOS 14 Sonoma or later
 
 Steps 3 and 4 are only needed the first time.
 
-Closing the window keeps MarketCrash running in the menu bar next to the clock. Click the number there to open it again, or choose Quit MarketCrash to stop it.
+Closing the window keeps MarketCrash running in the menu bar next to the clock. Click the number there to open it again, or choose Quit MarketCrash to close it.
+
+The desktop widget and alerts keep updating every 5 minutes, even after you quit. Each update runs for a few seconds, then stops. To turn this off, open Settings and switch off "Run in the background". Do that before you delete the app.
 
 ## Disclaimer
 
@@ -27,6 +29,7 @@ MarketCrash is a free personal project, shared for information and education onl
 - It is not financial, investment, tax or legal advice, and it doesn't tell you to buy or sell anything. Talk to a licensed professional before making investment decisions.
 - It can't predict crashes. The gauges describe current market conditions. In tests on past crashes they mostly rose after a sell-off had already started, and they can give false alarms or miss a crash completely.
 - Market data comes from third parties (Yahoo Finance, the Federal Reserve Bank of St. Louis and AAII) and is downloaded by the app on your own Mac. It can be delayed, incomplete or wrong, and the app may stop working if a data source changes.
+- Calendar dates come from government agencies, companies and news reports. They can change, and estimated dates are marked. A date on the calendar isn't a signal to buy or sell. The app checks this page once a day for corrected dates.
 - Past market behavior doesn't guarantee future results.
 - MarketCrash isn't affiliated with or endorsed by S&P Dow Jones Indices, Yahoo, the Federal Reserve, AAII or Apple. S&P 500 is a trademark of S&P Dow Jones Indices LLC.
 
